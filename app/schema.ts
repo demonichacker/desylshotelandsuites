@@ -1,0 +1,50 @@
+export const hotelSchema = {
+  "@context": "https://schema.org",
+  "@type": "Hotel",
+  name: "DE-SYLS HOTELS & SUITES",
+  description: "Luxury hotel accommodation in Festac Town, Lagos",
+  url: "https://desyls-hotels.vercel.app",
+  telephone: "+23470078113737",
+  email: "desylshotelandsuites@gmail.com",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "1st Avenue, Beside Fidelity Bank",
+    addressLocality: "Festac Town",
+    addressRegion: "Lagos",
+    postalCode: "Lagos",
+    addressCountry: "NG",
+  },
+  image: "https://desyls-hotels.vercel.app/luxury-executive-suite-hotel-room.jpg",
+  priceRange: "₦18,000 - ₦60,000",
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.8",
+    ratingCount: "450",
+  },
+  amenityFeature: [
+    { "@type": "Text", name: "Free Wi-Fi" },
+    { "@type": "Text", name: "Restaurant" },
+    { "@type": "Text", name: "Pool" },
+    { "@type": "Text", name: "Gym" },
+    { "@type": "Text", name: "Spa" },
+    { "@type": "Text", name: "Conference Hall" },
+  ],
+  checkinTime: "14:00",
+  checkoutTime: "12:00",
+}
+
+export const roomSchema = (room: any) => ({
+  "@context": "https://schema.org",
+  "@type": "LodgingBusiness",
+  name: room.name,
+  description: room.description,
+  url: `https://desyls-hotels.vercel.app/rooms/${room.id}`,
+  image: room.image,
+  priceRange: `₦${room.price}`,
+  offers: {
+    "@type": "Offer",
+    price: room.price,
+    priceCurrency: "NGN",
+    availability: "https://schema.org/InStock",
+  },
+})
