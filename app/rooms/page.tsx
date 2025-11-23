@@ -88,7 +88,7 @@ export default function RoomsPage() {
       
 
       {/* Page Header */}
-      <section className="bg-accent py-12 md:py-16">
+      <section className="bg-accent py-12 md:py-16 mt-20">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4">Rooms & Suites</h1>
           <p className="text-lg text-muted">Discover our collection of luxurious accommodations</p>

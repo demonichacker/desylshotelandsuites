@@ -11,7 +11,7 @@ export default function ContactPage() {
       <Header />
 
       {/* Page Header */}
-      <section className="bg-accent py-12 md:py-16">
+      <section className="bg-accent py-12 md:py-16 mt-20">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4">Contact Us</h1>
           <p className="text-lg text-muted">Get in touch with DE-SYLS HOTELS & SUITES</p>
