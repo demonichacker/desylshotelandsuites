@@ -12,51 +12,29 @@ export default function ClientPage() {
       <div className="pt-16">
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background with gradient overlay */}
-        <div className="absolute inset-0 bg-linear-to-br from-slate-900 via-slate-800 to-slate-900"></div>
-        <div className="absolute inset-0 bg-black/40"></div>
+      <section className="relative min-h-[50vh] md:min-h-screen flex items-end md:items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/herologo.jpg')" }}>
+        {/* Overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/50"></div>
 
-        {/* Animated background elements */}
-        <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        </div>
-
-        <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 text-center pb-8 md:pb-0">
           <div className="animate-fade-in-up">
-            <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 tracking-tight font-roboto">
-              DE-SYLS
-              <span className="block text-4xl md:text-6xl text-primary font-bold font-roboto">HOTELS & SUITES</span>
-            </h1>
-            <h2 className="text-2xl md:text-4xl font-bold text-white/90 mb-8 tracking-wide font-roboto">
-              EXCLUSIVE COMFORT
-            </h2>
-            <p className="text-xl text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed font-montserrat">
-              Luxury meets convenience in Festac Town. Experience unparalleled comfort in our meticulously designed spaces.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <div className="flex flex-row gap-4 md:gap-6 justify-center">
               <Link href="/rooms">
-                <button className="group bg-primary text-white px-10 py-4 rounded-full font-bold hover:bg-primary/90 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl font-montserrat">
+                <button className="group bg-primary text-white px-6 py-3 md:px-10 md:py-4 rounded-full font-bold hover:bg-primary/90 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl font-montserrat text-sm md:text-base">
                   <span className="relative z-10">CHECK AVAILABILITY</span>
                   <div className="absolute inset-0 bg-linear-to-r from-primary to-primary/80 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </button>
               </Link>
-              <Link href="/rooms">
-                <button className="group bg-white/10 backdrop-blur-sm border border-white/20 text-white px-10 py-4 rounded-full font-semibold hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+              <a href="https://wa.me/07078113727" target="_blank" rel="noopener noreferrer">
+                <button className="group bg-white/10 backdrop-blur-sm border border-white/20 text-white px-6 py-3 md:px-10 md:py-4 rounded-full font-semibold hover:bg-white/20 transition-all duration-300 transform hover:scale-105 text-sm md:text-base">
                   BOOK NOW
                 </button>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-pulse"></div>
-          </div>
-        </div>
+
       </section>
 
       {/* Featured Rooms */}

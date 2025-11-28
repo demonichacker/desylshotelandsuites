@@ -41,7 +41,7 @@ export default function AboutPage() {
                 creating unforgettable memories.
               </p>
             </div>
-            <img src="/logo.png" alt="DE-SYLS Hotel" className="w-full h-96 object-cover rounded" />
+            <img src="/herologo.jpg" alt="DE-SYLS Hotel" className="w-full h-96 object-cover rounded" />
           </div>
         </div>
       </section>

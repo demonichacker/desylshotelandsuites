@@ -130,41 +130,7 @@ export default function DiningPage() {
         </div>
       </section>
 
-      {/* Parking */}
-      <section className="py-16 md:py-24 bg-background">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-4xl font-serif font-bold mb-6">Secure Parking</h2>
-              <p className="text-lg text-muted mb-6">
-                Complimentary secure parking available for all guests. Our 24/7 security ensures your vehicle is safe
-                and protected.
-              </p>
-              <div className="space-y-4 mb-8">
-                <div className="flex items-center gap-3">
-                  <MapPin size={20} className="text-primary" />
-                  <div>
-                    <p className="font-semibold">Parking Capacity</p>
-                    <p className="text-muted">150+ vehicles</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Utensils size={20} className="text-primary" />
-                  <div>
-                    <p className="font-semibold">Security</p>
-                    <p className="text-muted">24/7 surveillance & guards</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <img
-              src="/placeholder.svg?key=parking1"
-              alt="Secure Parking"
-              className="w-full h-96 object-cover rounded"
-            />
-          </div>
-        </div>
-      </section>
+
 
       <Footer />
     </>
