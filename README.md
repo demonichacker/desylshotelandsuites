@@ -51,7 +51,7 @@ Access the admin dashboard at `/admin`
 
 All booking and contact forms use WhatsApp for communication:
 
-- **WhatsApp Number**: +234 70 0781 1373
+- **WhatsApp Number**: +234 80 8098 7422
 - **Booking Message Template**: Pre-filled with guest details
 - **Contact Message Template**: Pre-filled with contact information
 

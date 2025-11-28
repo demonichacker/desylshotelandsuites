@@ -23,7 +23,7 @@ function PaymentUnavailableContent() {
     const roomName = roomNames[room as keyof typeof roomNames] || room
     const message = `Hi, I would like to book a room.\n\nRoom Type: ${roomName}\nEmail: ${email}\nPrice per night: ₦${price.toLocaleString()}\n\nPlease confirm availability and proceed with the booking.`
     const encodedMessage = encodeURIComponent(message)
-    window.open(`https://wa.me/2347081754118?text=${encodedMessage}`, "_blank")
+    window.open(`https://wa.me/2348080987422?text=${encodedMessage}`, "_blank")
   }
 
   return (
@@ -90,12 +90,12 @@ function PaymentUnavailableContent() {
                 Or reach out directly to our booking team
               </p>
               <a
-                href="https://wa.me/2347081754118"
+                href="https://wa.me/2348080987422"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block text-primary font-semibold hover:underline"
               >
-                07081754118
+                08080987422
               </a>
             </div>
           </div>
