@@ -4,7 +4,7 @@ export const hotelSchema = {
   name: "DE-SYLS HOTELS & SUITES",
   description: "Luxury hotel accommodation in Festac Town, Lagos",
   url: "https://desyls-hotels.vercel.app",
-  telephone: "+23470078113737",
+  telephone: "+2348080987422",
   email: "desylshotelandsuites@gmail.com",
   address: {
     "@type": "PostalAddress",

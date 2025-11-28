@@ -15,7 +15,7 @@ Contact Email: [Your Email]
 Phone: [Your Phone]`
 
     const encodedMessage = encodeURIComponent(message)
-    window.open(`https://wa.me/23470078113737?text=${encodedMessage}`, "_blank")
+    window.open(`https://wa.me/2348080987422?text=${encodedMessage}`, "_blank")
   }
 
   return (
