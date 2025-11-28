@@ -1,7 +1,7 @@
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 
-import { Award, Users, MapPin } from "lucide-react"
+
 
 export const metadata = {
   title: "About Us | DE-SYLS HOTELS & SUITES",
@@ -46,31 +46,52 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Mission & Values */}
+      {/* Vision & Mission */}
       <section className="py-16 md:py-24 bg-accent">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl font-serif font-bold text-center mb-12">Our Mission</h2>
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="text-xl text-muted mb-8">
-              To provide EXCLUSIVE COMFORT through exceptional hospitality, world-class facilities, and personalized
-              service that exceeds expectations.
+          <h2 className="text-4xl font-serif font-bold text-center mb-12">OUR VISION & MISSION</h2>
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="text-lg text-muted mb-6">
+              Our goal is to become the most trusted and sought-after hotel brand in West Africa.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                { icon: Award, title: "Excellence", description: "Highest standards in everything we do" },
-                { icon: Users, title: "Hospitality", description: "Genuine care for our guests" },
-                { icon: MapPin, title: "Community", description: "Proud members of Festac Town" },
-              ].map((value) => {
-                const Icon = value.icon
-                return (
-                  <div key={value.title} className="bg-background p-6 rounded">
-                    <Icon size={32} className="text-primary mx-auto mb-4" />
-                    <h3 className="font-semibold mb-2">{value.title}</h3>
-                    <p className="text-sm text-muted">{value.description}</p>
-                  </div>
-                )
-              })}
-            </div>
+            <p className="text-lg text-muted mb-6">
+              We strive to deliver an experience that goes beyond what our guests expect.
+            </p>
+            <p className="text-lg text-muted mb-6">
+              We are devoted to offering top-tier facilities and tailored services that make every stay memorable.
+            </p>
+            <p className="text-lg text-muted mb-6">
+              We take pride in creating an atmosphere of genuine comfort, warmth, and care for everyone who walks through our doors.
+            </p>
+            <p className="text-lg text-muted mb-6">
+              We believe in continuous improvement and growth through constant learning and innovation.
+            </p>
+            <p className="text-lg text-muted mb-6">
+              We remain flexible and forward-thinking as we navigate an ever-evolving world.
+            </p>
+            <p className="text-lg text-muted font-semibold">
+              De-Syls Hotels & Suites… Blending Global Standards with True African Hospitality.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Values */}
+      <section className="py-16 md:py-24 bg-background">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-4xl font-serif font-bold text-center mb-12">OUR VALUES</h2>
+          <div className="max-w-4xl mx-auto">
+            <ul className="space-y-4 text-lg text-muted">
+              <li>• Excellence in everything we do</li>
+              <li>• Continuous growth and improvement</li>
+              <li>• Authentic care for our guests</li>
+              <li>• Strong dedication to our purpose</li>
+              <li>• Creativity that inspires better solutions</li>
+              <li>• Passion that drives exceptional service</li>
+              <li>• Pride in our brand and our people</li>
+              <li>• Integrity, discipline, and professionalism</li>
+              <li>• Responsibility to our community and environment</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -103,27 +124,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Leadership */}
-      <section className="py-16 md:py-24 bg-accent">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl font-serif font-bold text-center mb-12">Leadership</h2>
-          <div className="max-w-2xl mx-auto text-center">
-            <div className="bg-background p-8 rounded">
-              <img
-                src="/placeholder.svg?key=manager"
-                alt="General Manager"
-                className="w-32 h-32 rounded-full mx-auto mb-6 object-cover"
-              />
-              <h3 className="text-2xl font-serif font-bold mb-2">Mr. Chukwu Okafor</h3>
-              <p className="text-primary font-semibold mb-4">General Manager</p>
-              <p className="text-muted">
-                With over 15 years of experience in luxury hospitality, Mr. Okafor leads DE-SYLS with a passion for
-                excellence and guest satisfaction.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <Footer />
     </>
